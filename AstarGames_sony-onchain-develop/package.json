@@ -1,0 +1,30 @@
+{
+  "name": "guitar_cryptone",
+  "version": "1.0.0",
+  "description": "Smart contract",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx hardhat test",
+    "test-dev": "npx hardhat test --network hardhat",
+    "compile": "npx hardhat compile",
+    "watch": "npx hardhat watch compilation",
+    "deploy-test": "npx hardhat run ./scripts/guitar-cryptone.deploy.ts --network hardhat",
+    "deploy-sepolia": "npx hardhat run ./scripts/guitar-cryptone.deploy.ts --network sepolia",
+    "local": "npx hardhat node"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "@openzeppelin/contracts-upgradeable": "^5.0.2",
+    "dotenv": "^16.3.1",
+    "hardhat": "^2.19.4"
+  },
+  "devDependencies": {
+    "@nomicfoundation/hardhat-toolbox": "^4.0.0",
+    "@openzeppelin/hardhat-upgrades": "^3.0.5",
+    "hardhat-contract-sizer": "^2.10.0",
+    "hardhat-watcher": "^2.5.0",
+    "solidity-coverage": "^0.8.12"
+  }
+}
